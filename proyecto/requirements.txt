@@ -1,4 +1,3 @@
-textwrap
 google-generativeai
 streamlit
 
