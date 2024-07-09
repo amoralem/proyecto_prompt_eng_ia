@@ -3,9 +3,8 @@ import google.generativeai as genai
 
 from cat_promts_tipo_correo import generar_prompt
 
-GOOGLE_API_KEY = 'xxxxx'
 ##########################################################
-genai.configure(api_key=GOOGLE_API_KEY)
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # for m in genai.list_models():
 #   if 'generateContent' in m.supported_generation_methods:
