@@ -1,16 +1,9 @@
-import textwrap
 import streamlit as st
 import google.generativeai as genai
 
-from IPython.display import Markdown
 from cat_promts_tipo_correo import generar_prompt
 
-def to_markdown(text):
-  text = text.replace('•', '  *')
-  return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
-
 GOOGLE_API_KEY = 'xxxxx'
-
 ##########################################################
 genai.configure(api_key=GOOGLE_API_KEY)
 
